@@ -15,5 +15,5 @@ mkdir -m 1777 -p /mnt/tmp
 mkdir -m 0555 -p /mnt/{sys,proc}
 cp -a /etc/pacman.d/gnupg "/mnt/etc/pacman.d/"
 echo "updating and installing necessary packages..."
-unshare --fork --pid pacman -r /mnt -Syu linux linux-firmware base base-devel python python-pip git vim neofetch
+unshare --fork --pid pacman -r /mnt -Syu linux linux-firmware base base-devel python python-pip git vim neofetch grub efibootmgr
 echo "done!!"
